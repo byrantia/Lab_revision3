@@ -28,3 +28,25 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+
+def test_empty():
+    input_arr = []
+
+    result = Lab3.bubble_sort(input_arr, 2)
+
+    assert (result == 0)
+
+def test_list_morethan_10():
+    input_arr = [1,2,3,4,5,6,7,8,9,10,11]
+
+    result = Lab3.bubble_sort(input_arr, 2)
+
+    assert (result == 1)
+
+def test_have_string():
+    input_arr = [1,'hello',2,343,35,4,5]
+
+    result = Lab3.bubble_sort(input_arr, 2)
+
+    assert (result == 2)
